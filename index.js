@@ -17,6 +17,9 @@ app.get('/health', (req, res) => {
 app.get('/ci-cd', (req, res)=>{
   res.json({message: "After fixing container information from jenkins again with proper build checking if mongo is getting existed or not and also pulled changes with gokul"});
 })
+app.get('/gokul', (req, res)=>{
+  res.json({message: "success"});
+});
 app.listen(PORT, () => {
   console.log(`Test app listening on port ${PORT}`);
 });
