@@ -14,7 +14,9 @@ app.get('/', (req, res) => {
 app.get('/health', (req, res) => {
   res.status(200).send('OK');
 });
-
+app.get('/ci-cd', (req, res)=>{
+  res.json({message: "CI CD running sucessfully"});
+})
 app.listen(PORT, () => {
   console.log(`Test app listening on port ${PORT}`);
 });
