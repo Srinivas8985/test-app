@@ -15,7 +15,7 @@ app.get('/health', (req, res) => {
   res.status(200).send('OK');
 });
 app.get('/ci-cd', (req, res)=>{
-  res.json({message: "final fix CI CD running sucessfully"});
+  res.json({message: "final fix CI CD running sucessfully again"});
 })
 app.listen(PORT, () => {
   console.log(`Test app listening on port ${PORT}`);
