@@ -15,7 +15,7 @@ app.get('/health', (req, res) => {
   res.status(200).send('OK');
 });
 app.get('/ci-cd', (req, res)=>{
-  res.json({message: "After fixing container information from jenkins"});
+  res.json({message: "After fixing container information from jenkins again"});
 })
 app.listen(PORT, () => {
   console.log(`Test app listening on port ${PORT}`);
