@@ -15,7 +15,7 @@ app.get('/health', (req, res) => {
   res.status(200).send('OK');
 });
 app.get('/ci-cd', (req, res)=>{
-  res.json({message: "After changing content sf"});
+  res.json({message: "After changing content test"});
 })
 app.get('/gokul', (req, res)=>{
   res.json({message: "success"});
